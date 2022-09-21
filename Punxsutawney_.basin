@@ -1,0 +1,215 @@
+Basin: Punxsutawney
+     Description: Headwaters to the City of Punxsutawney - Existing Conditions.
+     Last Modified Date: 21 September 2022
+     Last Modified Time: 13:37:59
+     Version: 4.10
+     Filepath Separator: \
+     Unit System: English
+     Missing Flow To Zero: No
+     Enable Flow Ratio: No
+     Compute Local Flow At Junctions: No
+     Unregulated Output Required: No
+
+     Enable Sediment Routing: No
+
+     Enable Quality Routing: No
+End:
+
+Subbasin: EB Mahoning Creek
+     Last Modified Date: 21 September 2022
+     Last Modified Time: 13:57:27
+     Canvas X: 4693.548387096776
+     Canvas Y: -119.3548387096771
+     From Canvas X: 4693.548387096776
+     From Canvas Y: -119.3548387096771
+     Area: 41
+     Downstream: Junction-1
+
+     Discretization: None
+     File: Punxsutawney_.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+     Initial Loss: 1
+     Constant Loss Rate: 0.1
+
+     Transform: Clark
+     Clark Method: Specified
+     Time of Concentration: 7
+     Storage Coefficient: 11
+     Time Area Method: Default
+
+     Baseflow: Linear Reservoir
+     Groundwater Layer: 1
+     GW-1 Baseflow Fraction: 0.5
+     GW-1 Number Reservoirs: 1
+     GW-1 Routing Coefficient: 70
+     GW-1 Initial Flow/Area Ratio: 1
+     Groundwater Layer: 2
+     GW-2 Baseflow Fraction: 0.5
+     GW-2 Number Reservoirs: 1
+     GW-2 Routing Coefficient: 100
+     GW-2 Initial Flow/Area Ratio: 1
+End:
+
+Subbasin: Stump Creek
+     Last Modified Date: 21 September 2022
+     Last Modified Time: 13:57:27
+     Canvas X: -48.38709677419138
+     Canvas Y: 1332.2580645161288
+     From Canvas X: -120.9677419354839
+     From Canvas Y: 1283.8709677419356
+     Area: 29
+     Downstream: Junction-1
+
+     Discretization: None
+     File: Punxsutawney_.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+     Initial Loss: 1
+     Constant Loss Rate: 0.1
+
+     Transform: Clark
+     Clark Method: Specified
+     Time of Concentration: 9
+     Storage Coefficient: 12
+     Time Area Method: Default
+
+     Baseflow: Linear Reservoir
+     Groundwater Layer: 1
+     GW-1 Baseflow Fraction: 0.5
+     GW-1 Number Reservoirs: 1
+     GW-1 Routing Coefficient: 70
+     GW-1 Initial Flow/Area Ratio: 1
+     Groundwater Layer: 2
+     GW-2 Baseflow Fraction: 0.5
+     GW-2 Number Reservoirs: 1
+     GW-2 Routing Coefficient: 100
+     GW-2 Initial Flow/Area Ratio: 1
+End:
+
+Junction: Junction-1
+     Last Modified Date: 21 September 2022
+     Last Modified Time: 13:40:42
+     Canvas X: 741.9354838709678
+     Canvas Y: 90.3225806451619
+     From Canvas X: 596.7741935483882
+     From Canvas Y: -135.4838709677415
+     Downstream: Reach-1
+End:
+
+Subbasin: Mahoning Creek Local
+     Last Modified Date: 21 September 2022
+     Last Modified Time: 13:57:27
+     Canvas X: -3112.9032258064526
+     Canvas Y: -667.7419354838703
+     From Canvas X: -3193.548387096773
+     From Canvas Y: -716.1290322580644
+     Area: 88
+     Downstream: Junction-2
+
+     Discretization: None
+     File: Punxsutawney_.sqlite
+
+     Canopy: None
+     Allow Simultaneous Precip Et: No
+     Plant Uptake Method: None
+
+     Surface: None
+
+     LossRate: Initial+Constant
+     Percent Impervious Area: 0.0
+     Initial Loss: 1
+     Constant Loss Rate: 0.1
+
+     Transform: Clark
+     Clark Method: Specified
+     Time of Concentration: 10
+     Storage Coefficient: 13
+     Time Area Method: Default
+
+     Baseflow: Linear Reservoir
+     Groundwater Layer: 1
+     GW-1 Baseflow Fraction: 0.5
+     GW-1 Number Reservoirs: 1
+     GW-1 Routing Coefficient: 70
+     GW-1 Initial Flow/Area Ratio: 1
+     Groundwater Layer: 2
+     GW-2 Baseflow Fraction: 0.5
+     GW-2 Number Reservoirs: 1
+     GW-2 Routing Coefficient: 100
+     GW-2 Initial Flow/Area Ratio: 1
+End:
+
+Reach: Reach-1
+     Last Modified Date: 21 September 2022
+     Last Modified Time: 13:58:19
+     Canvas X: -2693.5483870967746
+     Canvas Y: -3248.387096774193
+     From Canvas X: 741.9354838709678
+     From Canvas Y: 90.3225806451619
+     Downstream: Junction-2
+
+     Route: Lag
+     Initial Variable: Combined Inflow
+     Lag: 300
+     Channel Loss: None
+End:
+
+Junction: Junction-2
+     Last Modified Date: 21 September 2022
+     Last Modified Time: 13:40:46
+     Canvas X: -2693.5483870967746
+     Canvas Y: -3248.387096774193
+     From Canvas X: -2758.0645161290304
+     From Canvas Y: -3264.5161290322576
+End:
+
+Basin Layer Properties:
+     Element Layer:
+          Name: Icons
+          Layer shown: Yes
+     End Layer:
+End:
+
+Basin Spatial Properties:
+End:
+
+Basin Schematic Properties:
+     Last View N: 1332.2580645161288
+     Last View S: -3248.387096774193
+     Last View W: -3112.9032258064526
+     Last View E: 4693.548387096776
+     Maximum View N: 1332.2580645161288
+     Maximum View S: -3248.387096774193
+     Maximum View W: -3112.9032258064526
+     Maximum View E: 4693.548387096776
+     Extent Method: Manual
+     Buffer: 0
+     Draw Icons: Yes
+     Draw Icon Labels: Name
+     Draw Map Objects: No
+     Draw Gridlines: No
+     Draw Flow Direction: No
+     Draw HillShade Layer: Yes
+     Draw Elevation Layer: Yes
+     Elevation Layer Color Palette: Gray Scale
+     Ignore Elevation Color Ramp Scale: No
+     Use Interpolated Color Ramp for Elevation Layer: Yes
+     Color Ramp Opacity Level for Elevation Layer: 33.0
+     Fix Element Locations: No
+     Fix Hydrologic Order: No
+End:
