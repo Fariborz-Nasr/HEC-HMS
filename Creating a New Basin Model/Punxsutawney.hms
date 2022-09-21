@@ -1,0 +1,15 @@
+Project: Punxsutawney
+     Description: 
+     Version: 4.10
+     Filepath Separator: \
+     DSS File Name: Punxsutawney.dss
+     Time Zone ID: America/New_York
+End:
+
+Basin: Punxsutawney
+     Filename: Punxsutawney_.basin
+     Description: Headwaters to the City of Punxsutawney - Existing Conditions.
+     Last Modified Date: 21 September 2022
+     Last Modified Time: 13:58:19
+End:
+
